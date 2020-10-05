@@ -278,7 +278,8 @@ const CustomSoftware = (props) => {
 					container
 					direction={matchesMD ? 'column' : 'row'}
 					alignItems={matchesMD ? 'center' : undefined}
-					justify='space-between'
+					justify={matchesMD ? 'center' : 'space-between'}
+					style={{ display: matchesMD ? 'grid' : undefined }}
 				>
 					<Grid
 						item
@@ -424,8 +425,11 @@ const CustomSoftware = (props) => {
 					container
 					direction={matchesMD ? 'column' : 'row'}
 					alignItems={matchesMD ? 'center' : undefined}
-					justify='space-between'
-					style={{ marginBottom: '10em' }}
+					justify={matchesMD ? 'center' : 'space-between'}
+					style={{
+						marginBottom: '10em',
+						display: matchesMD ? 'grid' : undefined,
+					}}
 				>
 					<Grid
 						item

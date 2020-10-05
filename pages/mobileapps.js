@@ -225,7 +225,8 @@ const MobileApps = (props) => {
 						<Lottie
 							options={defaultOptions}
 							style={{
-								maxWidth: '20em',
+								maxWidth: matchesMD ? '15em' : '20em',
+								height: matchesMD ? '20em' : undefined,
 								marginTop: matchesSM ? '5em' : 0,
 								marginBottom: matchesSM ? '5em' : 0,
 							}}
@@ -271,7 +272,15 @@ const MobileApps = (props) => {
 				</Grid>
 
 				{/* Icons */}
-				<Grid item container direction={matchesMD ? 'column' : 'row'}>
+				<Grid
+					item
+					container
+					direction={matchesMD ? 'column' : 'row'}
+					style={{
+						marginBottom: '15em',
+						display: matchesMD ? 'grid' : undefined,
+					}}
+				>
 					<Grid
 						item
 						container
