@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Link from '../src/Link'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
@@ -49,6 +50,32 @@ const Services = (props) => {
 
 	return (
 		<Grid container direction='column'>
+			<Head>
+				<title key='title'>
+					Top Custom Software Development Services | Arc Development
+				</title>
+				<meta
+					name='description'
+					key='description'
+					content='Cutting-edge software, mobile app, and website development services with sleek custom designs. 
+					Get a free online estimate now!'
+				/>
+				<meta
+					property='og:title'
+					key='og:title'
+					content='Bringing West Coast Technology to the Midwest | Services'
+				/>
+				<meta
+					property='og:url'
+					key='og:url'
+					content='http://torosdevelopment.com/services'
+				/>
+				<link
+					rel='canonical'
+					key='canonical'
+					href='http://torosdevelopment.com/services'
+				/>
+			</Head>
 			<Grid
 				item
 				style={{
@@ -57,7 +84,7 @@ const Services = (props) => {
 				}}
 			>
 				<Typography
-					variant='h2'
+					variant='h1'
 					align={matchesSM ? 'center' : undefined}
 					gutterBottom
 				>

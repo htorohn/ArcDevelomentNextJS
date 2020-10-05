@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Lottie from 'react-lottie'
 import Link from '../src/Link'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
@@ -142,12 +143,38 @@ const LandingPage = (props) => {
 
 	return (
 		<Grid container direction='column' className={classes.mainContainer}>
+			<Head>
+				<title key='title'>
+					Custom Software, Mobile Apps, and Websites | Arc Development
+				</title>
+				<meta
+					name='description'
+					key='description'
+					content='Pristine software custom-design from the ground up with cutting-edge optimizations. 
+					Use our free estimate calculator to check your project cost'
+				/>
+				<meta
+					property='og:title'
+					key='og:title'
+					content='Bringing West Coast Technology to the Midwest | Arc Development'
+				/>
+				<meta
+					property='og:url'
+					key='og:url'
+					content='http://torosdevelopment.com'
+				/>
+				<link
+					rel='canonical'
+					key='canonical'
+					href='http://torosdevelopment.com'
+				/>
+			</Head>
 			{/* Hero Section */}
 			<Grid item>
 				<Grid container justify='flex-end' alignItems='center'>
 					{/* Text and Buttons */}
 					<Grid item sm className={classes.heroTextContainer}>
-						<Typography variant='h2' align='center'>
+						<Typography variant='h1' align='center'>
 							Bringing West Coast Technology
 							<br />
 							To the Mid West
@@ -433,7 +460,7 @@ const LandingPage = (props) => {
 						>
 							<Grid container direction='column'>
 								<Typography
-									variant='h2'
+									variant='h1'
 									style={{ color: 'white' }}
 								>
 									About Us
@@ -480,7 +507,7 @@ const LandingPage = (props) => {
 						>
 							<Grid container direction='column'>
 								<Typography
-									variant='h2'
+									variant='h1'
 									style={{ color: 'white' }}
 								>
 									Contact Us

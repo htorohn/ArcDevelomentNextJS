@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Lottie from 'react-lottie'
 import Link from '../src/Link'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
@@ -54,6 +55,32 @@ const MobileApps = (props) => {
 
 	return (
 		<>
+			<Head>
+				<title key='title'>
+					iOS / Android App Design and Development | Arc Development
+				</title>
+				<meta
+					name='description'
+					key='description'
+					content='MobileApps made easy | Our cutting-edge mobile app development process lets us build beautifully designed, carefully crafted apps for both iOS and Android. 
+					Get a free online estimate now!'
+				/>
+				<meta
+					property='og:title'
+					key='og:title'
+					content='Bringing West Coast Technology to the Midwest | iOS / Android App Development'
+				/>
+				<meta
+					property='og:url'
+					key='og:url'
+					content='http://torosdevelopment.com/mobileapps'
+				/>
+				<link
+					rel='canonical'
+					key='canonical'
+					href='http://torosdevelopment.com/mobileapps'
+				/>
+			</Head>
 			<Grid
 				container
 				direction='column'
@@ -93,7 +120,7 @@ const MobileApps = (props) => {
 					>
 						<Grid item>
 							<Typography
-								variant='h2'
+								variant='h1'
 								align={matchesMD ? 'center' : undefined}
 							>
 								iOS/Android App Development

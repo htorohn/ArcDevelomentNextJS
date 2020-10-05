@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Lottie from 'react-lottie'
 import Link from '../src/Link'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
@@ -83,6 +84,32 @@ const CustomSoftware = (props) => {
 
 	return (
 		<>
+			<Head>
+				<title key='title'>
+					Custom Software Develoment and Design - Free Estimate
+				</title>
+				<meta
+					name='description'
+					key='description'
+					content='Cutting-edge custom software development with gorgeous designs from scratch - 
+					let us optimize your business, solving problems instead of creating new ones.'
+				/>
+				<meta
+					property='og:title'
+					key='og:title'
+					content='Bringing West Coast Technology to the Midwest | Custom Software Development'
+				/>
+				<meta
+					property='og:url'
+					key='og:url'
+					content='http://torosdevelopment.com/customsoftware'
+				/>
+				<link
+					rel='canonical'
+					key='canonical'
+					href='http://torosdevelopment.com/customsoftware'
+				/>
+			</Head>
 			<Grid
 				container
 				direction='column'
@@ -122,7 +149,7 @@ const CustomSoftware = (props) => {
 					>
 						<Grid item>
 							<Typography
-								variant='h2'
+								variant='h1'
 								align={matchesMD ? 'center' : undefined}
 							>
 								Custom Software Development

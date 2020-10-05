@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
@@ -44,13 +45,39 @@ const About = (props) => {
 
 	return (
 		<Grid container direction='column'>
+			<Head>
+				<title key='title'>
+					Abous Us - History & Team | Arc Development
+				</title>
+				<meta
+					name='description'
+					key='description'
+					content='We provide de fastest, most modern, affordable, and aesthetic softwre design and development in the Midwest. 
+					Get a free online estimate now!'
+				/>
+				<meta
+					property='og:title'
+					key='og:title'
+					content='Bringing West Coast Technology to the Midwest | About Us'
+				/>
+				<meta
+					property='og:url'
+					key='og:url'
+					content='http://torosdevelopment.com/about'
+				/>
+				<link
+					rel='canonical'
+					key='canonical'
+					href='http://torosdevelopment.com/about'
+				/>
+			</Head>
 			<Grid
 				item
 				className={classes.rowContainer}
 				style={{ marginTop: matchesMD ? '1em' : '2em' }}
 			>
 				<Typography
-					variant='h2'
+					variant='h1'
 					align={matchesMD ? 'center' : undefined}
 				>
 					About Us

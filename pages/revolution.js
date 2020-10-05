@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
@@ -25,6 +26,7 @@ const Revolution = (props) => {
 	const { setValue, setSelectedIndex } = props
 	const matchesMD = useMediaQuery(theme.breakpoints.down('md'))
 	const matchesSM = useMediaQuery(theme.breakpoints.down('sm'))
+	const matchesXS = useMediaQuery(theme.breakpoints.down('xs'))
 
 	const defaultOptions = {
 		loop: true,
@@ -37,13 +39,39 @@ const Revolution = (props) => {
 
 	return (
 		<Grid container direction='column'>
+			<Head>
+				<title key='title'>
+					The Revolution. Cuting-Edge Software | Arc Development
+				</title>
+				<meta
+					name='description'
+					key='description'
+					content='Visionary insights, coupled with cutting-edge technology, is a recipe for revolution.. 
+					Get a free online estimate instantly!'
+				/>
+				<meta
+					property='og:title'
+					key='og:title'
+					content='Bringing West Coast Technology to the Midwest | The Revolution'
+				/>
+				<meta
+					property='og:url'
+					key='og:url'
+					content='http://torosdevelopment.com/revolution'
+				/>
+				<link
+					rel='canonical'
+					key='canonical'
+					href='http://torosdevelopment.com/revolution'
+				/>
+			</Head>
 			<Grid
 				item
 				className={classes.rowContainer}
 				style={{ marginTop: '2em' }}
 			>
 				<Typography
-					variant='h2'
+					variant='h1'
 					style={{ fontFamily: 'Pacifico' }}
 					align={matchesMD ? 'center' : undefined}
 				>
@@ -765,12 +793,13 @@ const Revolution = (props) => {
 						</Typography>
 					</Grid>
 				</Grid>
+
 				<Grid item lg style={{ alignSelf: 'center' }}>
 					<img
 						src='/assets/launchIcon.svg'
 						alt='Rocket'
 						width='100%'
-						style={{ maxWidth: 200 }}
+						style={{ maxWidth: matchesXS ? 100 : 200 }}
 					/>
 				</Grid>
 			</Grid>

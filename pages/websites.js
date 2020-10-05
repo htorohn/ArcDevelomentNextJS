@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Link from '../src/Link'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
@@ -45,6 +46,33 @@ const Websites = (props) => {
 
 	return (
 		<>
+			<Head>
+				<title key='title'>
+					Stunning Custom Website Design | Arc Development
+				</title>
+				<meta
+					name='description'
+					key='description'
+					content='Completely custom designed and build from scratch to blazing fast. 
+					Optimized code, server-side rendering, and perfect responsive design | 99% PageSpeed Score.
+					Get a free online estimate now!'
+				/>
+				<meta
+					property='og:title'
+					key='og:title'
+					content='Bringing West Coast Technology to the Midwest | Website Development'
+				/>
+				<meta
+					property='og:url'
+					key='og:url'
+					content='http://torosdevelopment.com/websites'
+				/>
+				<link
+					rel='canonical'
+					key='canonical'
+					href='http://torosdevelopment.com/websites'
+				/>
+			</Head>
 			<Grid
 				container
 				direction='column'
@@ -84,7 +112,7 @@ const Websites = (props) => {
 					>
 						<Grid item>
 							<Typography
-								variant='h2'
+								variant='h1'
 								align={matchesMD ? 'center' : undefined}
 							>
 								Website Development
@@ -153,9 +181,7 @@ const Websites = (props) => {
 									src='/assets/analytics.svg'
 									alt="graph with magnifying glass revealing 1's and 0's"
 									style={{
-										marginLeft: matchesSM
-											? undefined
-											: '-2.75em',
+										marginLeft: matchesSM ? 0 : '-2.75em',
 									}}
 								/>
 							</Grid>
