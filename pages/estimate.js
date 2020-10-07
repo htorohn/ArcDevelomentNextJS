@@ -791,6 +791,7 @@ const Estimate = (props) => {
 			<Head>
 				<title key='title'>
 					Free Custom Software Development Estimate | Arc Development
+					Toro
 				</title>
 				<meta
 					name='description'
