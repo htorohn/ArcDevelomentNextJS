@@ -141,13 +141,14 @@ const LandingPage = (props) => {
 		},
 	}
 
+	console.log(process.env.DB_HOST)
+
 	return (
 		<Grid container direction='column' className={classes.mainContainer}>
 			<Head>
 				<title key='title'>
 					Custom Software, Mobile Apps, and Websites | Arc Development
 				</title>
-				<meta name='hello' content={process.env.DB_HOST} />
 				<meta
 					name='description'
 					key='description'
