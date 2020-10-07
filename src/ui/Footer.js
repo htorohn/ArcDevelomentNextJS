@@ -68,7 +68,12 @@ const Footer = (props) => {
 					className={classes.mainContainer}
 				>
 					<Grid item className={classes.gridItem}>
-						<Grid container direction='column' spacing={2}>
+						<Grid
+							container
+							direction='column'
+							spacing={2}
+							style={{ margin: 0 }}
+						>
 							<Grid
 								item
 								component={Link}
@@ -81,7 +86,12 @@ const Footer = (props) => {
 						</Grid>
 					</Grid>
 					<Grid item className={classes.gridItem}>
-						<Grid container direction='column' spacing={2}>
+						<Grid
+							container
+							direction='column'
+							spacing={2}
+							style={{ margin: 0 }}
+						>
 							<Grid
 								item
 								component={Link}
@@ -133,7 +143,12 @@ const Footer = (props) => {
 						</Grid>
 					</Grid>
 					<Grid item className={classes.gridItem}>
-						<Grid container direction='column' spacing={2}>
+						<Grid
+							container
+							direction='column'
+							spacing={2}
+							style={{ margin: 0 }}
+						>
 							<Grid
 								item
 								component={Link}
@@ -173,7 +188,12 @@ const Footer = (props) => {
 						</Grid>
 					</Grid>
 					<Grid item className={classes.gridItem}>
-						<Grid container direction='column' spacing={2}>
+						<Grid
+							container
+							direction='column'
+							spacing={2}
+							style={{ margin: 0 }}
+						>
 							<Grid
 								item
 								component={Link}
@@ -204,7 +224,12 @@ const Footer = (props) => {
 						</Grid>
 					</Grid>
 					<Grid item className={classes.gridItem}>
-						<Grid container direction='column' spacing={2}>
+						<Grid
+							container
+							direction='column'
+							spacing={2}
+							style={{ margin: 0 }}
+						>
 							<Grid
 								item
 								component={Link}

@@ -16,6 +16,7 @@
 		"next-optimized-images": "^2.6.2",
 		"prop-types": "latest",
 		"react": "latest",
+		"react-device-detect": "^1.14.0",
 		"react-dom": "latest",
 		"react-lottie": "^1.2.3"
 	},

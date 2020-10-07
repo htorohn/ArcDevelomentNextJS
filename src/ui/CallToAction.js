@@ -1,4 +1,5 @@
 import React from 'react'
+import { isSafari } from 'react-device-detect'
 import Link from '../Link'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
@@ -15,6 +16,19 @@ const useStyles = makeStyles((theme) => ({
 		backgroundSize: 'cover',
 		backgroundRepeat: 'no-repeat',
 		backgroundAttachment: 'fixed',
+		height: '60em',
+		width: '100%',
+		[theme.breakpoints.down('md')]: {
+			backgroundImage: `url('/assets/mobileBackground.jpg')`,
+			backgroundAttachment: 'inherit',
+		},
+	},
+	backgroundSafari: {
+		backgroundImage: `url('/assets/background.jpg')`,
+		backgroundPosition: 'center',
+		backgroundSize: 'cover',
+		backgroundRepeat: 'no-repeat',
+		//backgroundAttachment: 'fixed',
 		height: '60em',
 		width: '100%',
 		[theme.breakpoints.down('md')]: {
@@ -60,7 +74,7 @@ const CallToAction = (props) => {
 	return (
 		<Grid
 			container
-			className={classes.background}
+			className={isSafari ? classes.backgroundSafari : classes.background}
 			alignItems='center'
 			justify={matchesSM ? 'center' : 'space-between'}
 			direction={matchesSM ? 'column' : 'row'}

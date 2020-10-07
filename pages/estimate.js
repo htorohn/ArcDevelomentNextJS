@@ -619,8 +619,9 @@ const Estimate = (props) => {
 					message: 'Estimate placed successfully',
 					backgroundColor: '#4BB543',
 				})
-				setDialogOpen(false)
 				setInitialState()
+				setQuestions(defaultQuestions)
+				setDialogOpen(false)
 			})
 			.catch((err) => {
 				console.log(err)
