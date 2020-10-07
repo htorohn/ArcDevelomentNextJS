@@ -147,6 +147,7 @@ const LandingPage = (props) => {
 				<title key='title'>
 					Custom Software, Mobile Apps, and Websites | Arc Development
 				</title>
+				<meta name='hello' content={process.env.DB_HOST} />
 				<meta
 					name='description'
 					key='description'
